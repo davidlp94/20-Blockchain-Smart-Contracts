@@ -21,7 +21,7 @@ NOTE: Please refer to smart contract for entirety of main source code.
 This project leverages the following tools:
 
 - Conda
-- Solidity - 0.5.0
+- Solidity - v0.5.0
 - Remix IDE
 - Git Bash
 
