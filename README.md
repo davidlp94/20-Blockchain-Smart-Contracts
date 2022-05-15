@@ -8,6 +8,8 @@
 [![Issues][issues-shield]][issues-url]
 
 
+![image](https://user-images.githubusercontent.com/96163075/168461725-9bcd99c6-b5ef-41d3-bf2c-6f02e87a49e7.png)
+
 
 # Blockchain Smart Contracts - Joint Savings Account
 This repository contains a smart contract (joint_savings.sol) that is desgined to automate the creation of joint savings accounts. This Solidity smart contract accepts two user addresses that will be able to control a joint savings account with standard deposit, withdrawal and check-balance functions.
