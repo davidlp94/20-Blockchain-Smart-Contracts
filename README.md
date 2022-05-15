@@ -16,7 +16,7 @@ This repository contains a smart contract (joint_savings.sol) that is desgined t
 
 ## Technologies
 
-NOTE: Please refer to entire smart contract for entirety of main source code.
+NOTE: Please refer to smart contract for entirety of main source code.
 
 This project leverages the following tools:
 
@@ -24,7 +24,6 @@ This project leverages the following tools:
 - Solidity - 0.5.0
 - Remix IDE
 - Git Bash
-- Truffle/Ganache
 
 Since Remix IDE can be ran in a standard Web browser, such as Chrome or Brave, the entire solidity code can be copied and pasted into your Remix IDE to follow along this README.md. No programs, modules or installs are required to test out this smart contract. All you need is a computer, web browser and an internet connection!
 
@@ -39,7 +38,7 @@ function deposit() public payable {}
 ```
 The setAccounts function takes (2) account addresses and designates them as authorized account holders that can deposit and withdraw.
 
-The withdraw function withdraws funds from the smart contract and transfers them to the "recipient" with a few conditional statements. First, the account balance has to be greater than the withdrawal amount. Also, the "recipient" has to be an authorized user. Using Solidity's conditional "require" we are able to accomplish this, see relative code below:
+The withdraw function withdraws funds from the smart contract and transfers them to the "recipient" with a few conditional statements. First, the account balance has to be greater than the withdrawal amount. Also, the "recipient" has to be an authorized user. Finally, we update the lastToWithdraw variable. Using Solidity's conditional "require" and "if" statements, we are able to accomplish this, see relative code below:
 
 ```
     require(recipient == accountOne || recipient == accountTwo, "You don't own this account!");
