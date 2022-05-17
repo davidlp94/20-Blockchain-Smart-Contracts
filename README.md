@@ -43,10 +43,10 @@ The setAccounts function takes (2) account addresses and designates them as auth
 The withdraw function withdraws funds from the smart contract and transfers them to the "recipient" with a few conditional statements. First, the account balance has to be greater than the withdrawal amount. Also, the "recipient" has to be an authorized user. Finally, we update the lastToWithdraw variable. Using Solidity's conditional "require" and "if" statements, we are able to accomplish this, see relative code below:
 
 ```
-    require(recipient == accountOne || recipient == accountTwo, "You don't own this account!");
-    require(amount <= contractBalance, "Insufficient funds!");
-    if (lastToWithdraw != recipient) {
-                lastToWithdraw = recipient;
+require(recipient == accountOne || recipient == accountTwo, "You don't own this account!");
+require(amount <= contractBalance, "Insufficient funds!");
+if (lastToWithdraw != recipient) {
+            lastToWithdraw = recipient;
 ```
 
 ---
