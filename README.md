@@ -31,7 +31,7 @@ Since Remix IDE can be ran in a standard Web browser, such as Chrome or Brave, t
 
 There are three main functions to this application (Please refer to joint_savings.sol for full source code):
 
-```
+```solidity
 function setAccounts(address payable account1, address payable account2) public {}
  
 function withdraw(uint amount, address payable recipient) public {}
